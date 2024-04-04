@@ -1,0 +1,25 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "Novo evento 2",
+  "details": null,
+  "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/b821e928-eec2-40e3-9fe8-f71b61f57b09/attendees
+Content-Type: application/json
+
+{
+  "name": "Cleonan Brito",
+  "email": "cleonan7@bol.com.br"
+}
+
+###
+
+GET http://localhost:3333/events/b821e928-eec2-40e3-9fe8-f71b61f57b09
+
+###
+GET http://localhost:3333/attendees/1/badge
